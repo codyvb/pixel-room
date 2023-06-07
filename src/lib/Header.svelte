@@ -24,12 +24,12 @@
 </script>
 
 <header
-  class="-z-10 flex justify-between border-b-2 border-gray-100 bg-white py-5 pl-4"
+  class="-z-10 flex justify-between items-center border-gray-100 bg-black py-5 pl-4"
 >
-  <h1 class="flex items-center pt-0.5 pl-[1px]">
+  <h1 class="flex ml-auto mr-auto items-center pt-0.5 pl-[1px]">
     <img alt="Pixel art together" src={logo} />
   </h1>
-  <div class="flex items-center pr-2 text-black">
+  <div class="hidden flex items-center pr-2 text-black">
     <sl-tooltip content="Source code" placement="left">
       <a
         class="focus-visible-style"

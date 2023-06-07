@@ -8,7 +8,6 @@
     href="https://liveblocks.io"
     target="_blank"
   >
-    <img alt="Powered by Liveblocks.io" src={poweredByLiveblocks} />
     <div
       class="absolute inset-0 bg-[color:var(--sl-color-primary-100)] opacity-0 mix-blend-darken transition-opacity group-hover:opacity-20"
     ></div>

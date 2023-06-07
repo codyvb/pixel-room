@@ -191,7 +191,7 @@
   }
 </script>
 
-<div class="border-t-2 border-gray-100 p-5 text-sm">
+<div class="hidden border-gray-100 p-5 text-sm">
   <div class="pb-3 font-semibold text-gray-500">Layers</div>
   <div class="select-none text-sm text-gray-700">
     <div class="rounded-[4px] border border-[#D4D4D8]">

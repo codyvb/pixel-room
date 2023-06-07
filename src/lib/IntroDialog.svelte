@@ -64,27 +64,21 @@
   label="Create a pixel canvas"
   no-header
   open
-  style="--width: 300px;"
+  style="--width: 300px; --background-color: #000000;"
 >
-  <div class="flex flex-col">
+  <div class="flex flex-col ">
     <h1 class="mt-2.5 text-2xl">
-      <img
-        alt="Pixel art together"
-        class="mx-auto block max-w-full"
-        src={logo}
-      />
     </h1>
 
     <sl-input
-      class="mt-5"
+      class="mt-5 hidden"
       on:keydown={handleInputKeyDown}
       on:sl-input={(e) => (name = e.target.value)}
       placeholder="Enter your name"
       value={name}
+
     >
-      <div class="pb-1.5 text-sm font-semibold text-gray-500" slot="label">
-        Name
-      </div>
+
     </sl-input>
 
     {#if shouldCreateCanvas && !loading}
@@ -130,7 +124,7 @@
     {/if}
 
     <sl-button class="mt-5" {loading} on:click={submitDialog} variant="primary">
-      {shouldCreateCanvas ? "Create canvas" : "Set name"}
+      {shouldCreateCanvas ? "Create canvas" : "Enter"}
     </sl-button>
   </div>
 </sl-dialog>

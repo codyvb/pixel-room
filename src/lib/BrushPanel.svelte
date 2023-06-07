@@ -79,7 +79,7 @@
 </script>
 
 <div class="p-5 pb-2">
-  <div class="pb-3 text-sm font-semibold text-gray-500">Colour</div>
+  <div class="pb-3 text-sm font-semibold hidden text-gray-500">Colour</div>
   <div>
     <sl-color-picker
       bind:this={colorPicker}

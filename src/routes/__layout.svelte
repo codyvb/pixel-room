@@ -53,6 +53,9 @@
   :root {
     --full-height: calc(var(--vh, 1vh) * 100);
 
+        --sl-background-color: #000000;
+
+
     --sl-font-sans: Karla, Inter, sans-serif;
     --sl-panel-border-width: 0;
     --sl-font-size-medium: 14px;

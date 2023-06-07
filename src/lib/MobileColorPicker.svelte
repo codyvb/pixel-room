@@ -65,7 +65,7 @@
 
 <sl-color-picker
   bind:this={colorPicker}
-  class="mobile-color-picker"
+  class="mobile-color-picker bg-black"
   on:sl-change={colorChange}
   opacity
   value={colorValue}

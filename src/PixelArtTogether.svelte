@@ -449,7 +449,7 @@
 {/if}
 
 <!-- App -->
-<div class="relative flex h-full min-h-full bg-white">
+<div class="relative flex h-full min-h-full bg-black">
   <!-- Left panel, containing layers etc -->
   <div
     class="side-panel fixed right-full z-20 h-full w-auto flex-shrink-0 flex-grow-0 overflow-y-auto overflow-x-hidden border-gray-100 bg-white bg-white md:relative md:!relative md:right-auto md:z-10 md:!w-auto md:w-auto md:min-w-[320px] md:!translate-x-0 {mobileMenuOpen
@@ -464,7 +464,7 @@
         on:pointermove={(e) => handleMouseMove(e, "toolsPanel")}
         on:pointerleave={handleMouseLeave}
         transition:fade
-        class="relative top-[-455px] flex h-full min-h-full flex-col md:top-0"
+        class="relative top-[-455px] flex h-full min-h-full flex-col md:top-0 bg-black"
       >
         <BrushPanel
           on:brushChange={handleBrushChange}
@@ -492,7 +492,7 @@
       <!-- Tool bar above canvas -->
       <div
         transition:fade
-        class="relative z-10 flex w-full flex-shrink-0 flex-grow-0 items-center justify-between border-2 border-t-0 border-gray-100 bg-white p-4"
+        class="relative hidden z-10 flex w-full flex-shrink-0 flex-grow-0 bg-black items-center justify-between border-t-0 border-gray-100 bg-white p-4"
       >
         <!-- Buttons: left side -->
         <div class="flex gap-3">
@@ -610,7 +610,7 @@
     {/if}
 
     <!-- Main canvas -->
-    <div class="relative flex-shrink flex-grow">
+    <div class="relative flex-shrink flex-grow bg-black">
       {#if canvasReady && layers?.[0].grid.length}
         <PixelGrid
           {showGrid}
@@ -625,7 +625,7 @@
 
     <!-- Mobile menu bar at bottom -->
     <div
-      class="relative z-30 w-full flex-shrink-0 flex-grow-0 border-2 border-gray-100 bg-white py-3 pr-4 xl:hidden"
+      class=" hidden relative z-30 w-full flex-shrink-0 flex-grow-0 border-2 border-gray-100 bg-black py-3 pr-4 xl:hidden"
     >
       <div class="flex items-center justify-between">
         <!-- Open mobile menu button -->

@@ -58,7 +58,7 @@
 
 <canvas class="hidden" height={width * ratio} id="export-canvas" {width}></canvas>
 
-<div class="border-t-2 border-gray-100 p-5">
+<div class="hidden border-t-2 border-gray-100 p-5">
   <div class="pb-3 text-sm font-semibold text-gray-500">Exports</div>
   <div class="flex gap-3">
     <sl-button-group style="width: 100%;">
