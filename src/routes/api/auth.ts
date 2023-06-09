@@ -18,7 +18,7 @@ export async function post({ request }) {
     room: room,
     secret: API_KEY,
     userInfo: {
-      name: "Guest",
+      name: "Gardener",
       picture: `/assets/avatars/${Math.floor(Math.random() * 1)}.png`,
     },
   });

@@ -45,7 +45,7 @@
   onMount(async () => {
     await import("@shoelace-style/shoelace/dist/components/dialog/dialog.js");
     console.log("dialog", dialog);
-    dispatch("setName", { "name": "" });
+    dispatch("setName", { "name": "Gardener" });
 
     // if (dialog) {
     //   dialog.addEventListener("sl-request-close", cancelClose);
