@@ -191,6 +191,8 @@
   }
 </script>
 
+<!-- hide here -->
+
 <div class="hidden border-gray-100 p-5 text-sm">
   <div class="pb-3 font-semibold text-gray-500">Layers</div>
   <div class="select-none text-sm text-gray-700">
@@ -241,7 +243,7 @@
       <!-- New layer bar -->
       {#if !willExceedPixelCount}
         <button
-          class="focus-visible-style group relative block flex w-full cursor-pointer select-none bg-gray-50 px-2 py-2.5 focus-visible:z-10"
+          class="focus-visible-style group relative flex w-full cursor-pointer select-none bg-gray-50 px-2 py-2.5 focus-visible:z-10"
           on:click={addLayer}
         >
           <span
@@ -267,7 +269,7 @@
         </button>
       {:else}
         <div
-          class="relative block flex w-full select-none bg-gray-50 px-2 py-2.5 cursor-not-allowed"
+          class="relative flex w-full select-none bg-gray-50 px-2 py-2.5 cursor-not-allowed"
         >
           <span
             class="pr-2 text-red-400 transition-colors group-hover:text-gray-600"

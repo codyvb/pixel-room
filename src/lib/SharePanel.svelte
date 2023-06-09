@@ -3,7 +3,7 @@
   import QRCodeButton from "$lib/QRCodeButton.svelte";
 </script>
 
-<div class="mt-3 border-t-2 border-gray-100 px-5 pt-5 ">
+<div class="mt-3 hidden border-t-2 border-gray-100 px-5 pt-5 ">
   <div class="pb-1 text-sm font-semibold text-gray-500">Share with friends</div>
 
   <CopyLinkButton />

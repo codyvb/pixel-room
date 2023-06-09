@@ -24,7 +24,7 @@
 </script>
 
 <header
-  class="-z-10 flex justify-between items-center border-gray-100 bg-black py-5 pl-4"
+  class="-z-10 flex hidden justify-between items-center border-gray-100 bg-black py-5 pl-4"
 >
   <h1 class="flex ml-auto mr-auto items-center pt-0.5 pl-[1px]">
     <img alt="Pixel art together" src={logo} />

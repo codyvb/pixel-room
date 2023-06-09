@@ -489,10 +489,10 @@
     on:pointermove={(e) => handleMouseMove(e, "mainPanel")}
   >
     {#if canvasReady}
-      <!-- Tool bar above canvas -->
+      <!-- Tool bar above canvas hide here -->
       <div
         transition:fade
-        class="relative hidden z-10 flex w-full flex-shrink-0 flex-grow-0 bg-black items-center justify-between border-t-0 border-gray-100 bg-white p-4"
+        class="relative z-10 hidden  w-full flex-shrink-0 flex-grow-0 bg-black items-center justify-between border-t-0 border-gray-100  p-4"
       >
         <!-- Buttons: left side -->
         <div class="flex gap-3">
@@ -687,7 +687,7 @@
             {/each}
           {/if}
           {#if $self && $myPresence}
-            <div class="-my-2 mr-2 flex hidden flex-grow md:block">
+            <div class="-my-2 mr-2 flex flex-grow md:block">
               <div class="flex-grow-0">
                 <UserOnline
                   picture={$self.info.picture}
@@ -728,7 +728,7 @@
   <!-- Right panel, containing share links, users' colors etc. (only on large screens) -->
   <div
     bind:this={panels.multiplayerPanel}
-    class="side-panel relative left-full flex  w-0 flex-col overflow-y-auto py-5 xl:left-auto xl:w-[300px]"
+    class="side-panel relative hidden left-full  w-0 flex-col overflow-y-auto py-5 xl:left-auto xl:w-[300px]"
     id="multiplayer-panel"
     on:pointerleave={handleMouseLeave}
     on:pointermove={(e) => handleMouseMove(e, "multiplayerPanel")}
@@ -739,7 +739,6 @@
           <div
             class="border-gray-200 px-5 pb-1 text-sm font-semibold text-gray-500"
           >
-            Currently online
           </div>
 
           <!-- You -->

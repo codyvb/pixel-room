@@ -297,9 +297,11 @@
           </div>
         {/if}
 
+        <!-- hide here -->
+
         {#if $myPresence}
           <div
-            class="absolute bottom-full left-0 mb-1.5 text-sm font-bold uppercase tracking-wider text-gray-500 md:hidden"
+            class="absolute hidden bottom-full left-0 mb-1.5 text-sm font-bold uppercase tracking-wider text-gray-500 md:hidden"
           >
             Layer {$myPresence.selectedLayer}
           </div>

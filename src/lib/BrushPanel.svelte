@@ -32,7 +32,7 @@
     await import(
       "@shoelace-style/shoelace/dist/components/color-picker/color-picker.js"
     );
-    colorValue = '#fa3030';
+    colorValue = '#28c2ffff';
     applyCustomStyles(colorPicker);
   });
 
@@ -93,9 +93,12 @@
   }
 </script>
 
-<div class="p-5 pb-2">
+<!-- this is where we set colors hide here -->
+
+<div class="p-5 pb-2 ">
   <div class="pb-3 text-sm font-semibold hidden text-gray-500">Colour</div>
   <div>
+    <div class="hidden">
     <sl-color-picker
       bind:this={colorPicker}
       inline
@@ -104,18 +107,18 @@
       value={colorValue}
     ></sl-color-picker>
   </div>
+  </div>
 
   <div class="text-white">
-    THIS IS WHERE WE SET COLOURS
     <br>
-    <button class="w-12 h-12" style="background-color: #fa3030" on:click={() => {
-      updateColor('#fa3030');
+    <button class="w-12 h-12" style="background-color: #f5c361ff" on:click={() => {
+      updateColor('#f5c361ff');
     }}></button>
-    <button class="w-12 h-12" style="background-color: #9930faff" on:click={() => {
-      updateColor('#9930faff');
+    <button class="w-12 h-12" style="background-color: #28c2ffff" on:click={() => {
+      updateColor('#28c2ffff');
     }}></button>
-    <button class="w-12 h-12" style="background-color: #056f2dff" on:click={() => {
-      updateColor('#056f2dff');
+    <button class="w-12 h-12" style="background-color: #00c600ff" on:click={() => {
+      updateColor('#00c600ff');
     }}></button>
   </div>
 </div>
