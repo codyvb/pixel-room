@@ -44,10 +44,12 @@
   // Load components, prevent closing
   onMount(async () => {
     await import("@shoelace-style/shoelace/dist/components/dialog/dialog.js");
+    console.log("dialog", dialog);
+    dispatch("setName", { "name": "" });
 
-    if (dialog) {
-      dialog.addEventListener("sl-request-close", cancelClose);
-    }
+    // if (dialog) {
+    //   dialog.addEventListener("sl-request-close", cancelClose);
+    // }
 
     await import("@shoelace-style/shoelace/dist/components/range/range.js");
   });
