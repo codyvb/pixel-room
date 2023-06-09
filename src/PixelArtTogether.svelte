@@ -452,7 +452,7 @@
 <div class="relative flex h-full min-h-full bg-black">
   <!-- Left panel, containing layers etc -->
   <div
-    class="side-panel fixed right-full z-20 h-full w-auto flex-shrink-0 flex-grow-0 overflow-y-auto overflow-x-hidden border-gray-100 bg-white bg-white md:relative md:!relative md:right-auto md:z-10 md:!w-auto md:w-auto md:min-w-[320px] md:!translate-x-0 {mobileMenuOpen
+    class="side-panel bg-black fixed right-full z-20 h-full w-auto flex-shrink-0 flex-grow-0 overflow-y-auto overflow-x-hidden border-gray-100 bg-white bg-white md:relative md:!relative md:right-auto md:z-10 md:!w-auto md:w-auto md:min-w-[320px] md:!translate-x-0 {mobileMenuOpen
       ? 'border-r-2 drop-shadow-xl'
       : ''}"
     id="tools-panel"
