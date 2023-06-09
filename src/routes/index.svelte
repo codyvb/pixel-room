@@ -23,7 +23,7 @@
   onMount(() => {
     // Add random id to room param if not set, and return the id string
     // e.g. /?room=758df70b5e94c13289df6
-    id = createRoomId();
+    id = "ab8b7649684cda262d7ca";
 
     // Connect to the authentication API for Liveblocks
     client = createClient({
@@ -38,7 +38,7 @@
   <!-- Provides Liveblocks hooks to children -->
   <LiveblocksProvider {client}>
     <!-- Create a room from id e.g. `sveltekit-pixel-art-758df70b5e94c13289df6` -->
-    <RoomProvider id={"sveltekit-pixel-art-" + id}>
+    <RoomProvider id={"sveltekit-pixel-art-ab8b7649684cda262d7ca"}>
       <!-- Main app component -->
       <PixelArtTogether />
     </RoomProvider>
