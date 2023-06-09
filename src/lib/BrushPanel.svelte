@@ -40,6 +40,21 @@
     colorPicker.swatches = swatch;
   }
 
+  // TODO: we may need this code later, potentially 
+  // $: if (colorPicker && colorValue) {
+  //   // @ts-ignore
+  //   colorPicker.value = colorValue;
+  //   colorChange({
+  //     target: {
+  //       value: colorValue,
+  //       alpha: brush.opacity,
+  //       hue: brush.hue,
+  //       saturation: brush.saturation,
+  //       lightness: brush.lightness
+  //     }
+  //   });
+  // }
+
   // Workaround for custom elements
   function applyCustomStyles(host) {
     const style = document.createElement("style");
@@ -88,5 +103,19 @@
       opacity
       value={colorValue}
     ></sl-color-picker>
+  </div>
+
+  <div class="text-white">
+    THIS IS WHERE WE SET COLOURS
+    <br>
+    <button class="w-12 h-12" style="background-color: #fa3030" on:click={() => {
+      updateColor('#fa3030');
+    }}></button>
+    <button class="w-12 h-12" style="background-color: #9930faff" on:click={() => {
+      updateColor('#9930faff');
+    }}></button>
+    <button class="w-12 h-12" style="background-color: #056f2dff" on:click={() => {
+      updateColor('#056f2dff');
+    }}></button>
   </div>
 </div>
